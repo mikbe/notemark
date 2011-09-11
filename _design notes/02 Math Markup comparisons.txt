@@ -1,0 +1,58 @@
+The application suit will need to have a default math markup to start so what should I chose? I can worry about that later after writing the language spec.
+
+This is for note taking not solving so the focus should be on quickly writing equations.
+
+Thougts
+MathJax could be used to actually draw the math, need to investigate more. Could use ASCIIMath to translate to ML then have MathJax translate it to HTML but of course that means that output would be locked down to HTML. Gotta think about that.
+
+Roll your own:
+* -A LOT of work.
+* -Reinventing the wheel.
+* Could create output to MathML or LaTex so allowing use of MathJax.
+
+TeX/LaTeX:
+* -Grotesquely Ugly
+* -Unintuitive
+* -Verbose, wordy, excessive, and loquacious syntax.
+* -Stupid pronunciation of name.
+* +Lots of parsers.
+* -Would have to write my own preprocessor to simplify or find one.
+
+eqn:
+* -Does anyone actually use it?
+* -Painfully, and I think unnecessarily, verbose like x sup 2 instead of x^2.
+
+groff:
+* -Too complicated, does too much.
+
+Maple-like:
+* -Can't use the actual maple engine since it's not open source.
+* +simple, intuitive syntax
+* -have to write my own parser?
+
+Maxima:
+* +GPL
+* +Lisp based so it's a real programming language.
+* -Lisp based so it's not a simple markup.
+* -Incomplete. Only supports log. Deal breaker
+
+MathML:
+* -XML - no way in hell
+* -It isn't meant for speedy typing.
+* -Would have to write my own preprocessor to simplify or find one.
+
+ASCIIMathML:
+* +Claims to use simple calculator-style syntax
+* -Not as simple or intuitive as claimed.
+* -No new development in years.
+
+Astex:
+* Meh
+* Zero documentation
+* outputs images? Whatever they are they are god awful ugly.
+
+
+OMDoc:
+* -Ironically terrible documentation.
+* -XML - no way in hell. Not even worth doing a parser.
+

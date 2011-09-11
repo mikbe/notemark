@@ -1,0 +1,152 @@
+Notemark is not an HTML markup language!
+
+The markup language should not assume any help from a parser so you should be able to just type into a simple text editor and have it be usable and fast.
+
+General rules:
+White space can be used between a symbol and its text but it is not required. This is a convention that should be followed when creating extensions.
+
+Definitions
+
+::Term
+Definition
+
+Must be start of line. Review words can be built using definitions.
+
+!!Idea
+A random idea or thought you have during a note taking session.
+
+Session marker
+
+&&Session
+
+&&Lecture 00 
+
+A mark to denote a new note taking session. This  allows you to organize your notes by lecture numbers in the same or different files; whichever way makes more sense to you.
+
+DD Date and/or time
+must be start of line. This would allow for automatic addition of date time by a parser (when it's done) but still allow the user to manually enter it.
+
+
+Headings.
+I'm torn on stealing markdown's markup for this. I tend to not like it but it is really simple and clear.
+
+# Heading
+All headings must be start of line.
+
+##Sub-heading
+
+### Sub-sub-heading
+
+####Etc.
+
+
+$$$Default math markup language
+The parser can set a default language but you can also specify one.
+Must be start of line.
+
+
+$$ math $$
+Math can be anywhere in the text.
+Should be extensible so you can use whatever math markup you want.
+Line feeds are fine.
+
+
+*italic*
+Can be anywhere.
+
+
+**bold**
+Can be anywhere.
+
+
+new line
+Want a new line? Press bloody return! No stupid double spaces.
+
+
+Paragraph
+There is no "paragraph" marker because the whole concept of making a special indicator for a paragraph is not needed since this is not an HTML markup language. If you want a paragraph use two carriage returns just like you normally would when you type.
+
+
+ListName:
+* item 1
+* item 2
+
+Notice there is no need to have a blank line like in Markdown but the colon is required(?).
+Must be start of line.
+
+
+??Question
+A term or question to research after the note taking session is done.
+
+
+?!Review Question
+Answer.
+
+A study question you create after your note taking session based on your notes. You can easily convert your lecture questions to review questions but you don't have to.
+Must be start of line.
+
+One use for this could be the generation of flash cards from review questions and terms.
+
+
+Links: 
+Shamelessly steal Markdowns markup?  I think I can simplify this over Markdown but for now...
+
+
+Might not add links at first since the focus is taking notes not building webpages. But what about images/drawings? I think it is imperative to have images.
+
+
+
+[Text](http://url)
+A web Link. 
+Links don't have to start on a line.
+
+
+[Text] blah blah [Text].
+If you use a link a lot you can just use brackets then define the link later...
+
+[Text]: http://url "Title (optional)"
+
+
+<http://mikbe.tk>
+Automatic link.
+
+
+[Text]()
+Implicit link using the name.
+
+
+![Image](/path/to/image)
+An image link. Identical to text links in their formatting. Can also link to a web image. 
+
+![Image]()
+Implicit image. Will automatically map to common image types.
+
+
+Source code markup:
+
+@@language
+source code
+@@
+Denotes a code block.
+
+What about \\ as code markup instead of @@?
+
+
+@@@default language
+Allows code blocks without specifying language.
+Multiple default languages can be used and the last one used will be parsed.
+
+
+`Inline code`
+
+Will use last default language if no default inline is specified.
+
+@`default inline language
+Not sure if I should have this.
+
+
+
+
+
+Backslash Escapes:
+To force a literal character use a backslash: "\".

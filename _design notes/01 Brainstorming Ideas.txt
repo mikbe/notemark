@@ -1,0 +1,40 @@
+Should allow person to just take notes without complicated bullshit.
+
+for instance as you're typing to mark something as a definition you could use ::
+
+something I want to define:: the definition
+
+What should the view output be? Sure there could be multiple outputs but there needs be a default. I'm thinking HTML since there are lots of HTML parsers already and it's cross platform. The only other choice I can think of is rich text and I'm not sure if I want that.
+
+IT SHOULD NOT BE AN HTML MARKUP LANGUAGE!
+
+Output type should not influence markup design since there should be multiple formats.
+
+What about PDF for output?
+Maybe for printing but not for live editing since it isn't a dynamic editing format and it is fairly unfriendly to editing.
+
+Should it support Windows? If I can do it easily sure but not if I can't.
+
+What if I use Redcar as the base text editor? Except I need HTML display.
+
+WYSIWYG editing.
+Eventually I want to be able to type in markup and have it be displayed as parsed text. I think this will require me to build my own text input/display control.
+
+Don't be afraid to shamelessly steal ideas from Markdown but avoid the annoying syntax like double spaces for new lines.
+
+Important/Lookup later.
+
+Markup language parser should be easily extendible. 
+
+The markup should be a spec without any thought to what language implements it.
+
+Mathematical notation (e.g. LaTeX, Maple, etc.)
+
+Vim or Emacs keyboard short cuts with EASY spellcheck and speech.
+
+Why not use Vim?
+Vim isn't suitable because you should always be in insert mode and switching is a major mental stopper. It grinds me to a halt mentally when I have to keep switching back and forth. Also I hate the scripting language in Vim.
+
+Drawings
+What if the user app/note taking app allowed the use of a drawing pad like a Wacom? When you start drawing on the pad it automatically adds a picture element. Should also allow you to easily name the drawing.
+
